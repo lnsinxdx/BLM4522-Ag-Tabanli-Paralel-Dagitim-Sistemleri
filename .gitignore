@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# nvim
+*.swp
+*.swo
+
+# SQL Server files (too large for Git)
+*.bak
+*.trn
+*.mdf
+*.ldf
+
+# Temp files
+*.tmp
