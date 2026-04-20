@@ -1,0 +1,19 @@
+ALTER SERVER AUDIT [Audit-caglar] WITH (STATE = OFF);
+WAITFOR DELAY '00:00:02';
+ALTER SERVER AUDIT [Audit-caglar] WITH (STATE = ON);
+
+SELECT * 
+FROM sys.fn_get_audit_file('C:\Audits\Audit-caglar_8977C2CE-A388-428A-BCBC-C58B956D171E_0_133905913579880000.sqlaudit', NULL, NULL);
+
+DBCC CHECKDB(AdventureWorks2022);
+
+BACKUP DATABASE AdventureWorks2022
+TO DISK = 'C:\Backup\AuditTest.bak'
+WITH INIT, NAME = 'Test Backup';
+
+CREATE DATABASE AuditTestDB;
+DROP DATABASE AuditTestDB;
+
+USE AdventureWorks2022;
+CREATE TABLE AuditDemoTest (ID INT);
+DROP TABLE AuditDemoTest;

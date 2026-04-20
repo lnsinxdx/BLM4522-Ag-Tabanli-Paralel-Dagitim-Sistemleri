@@ -1,0 +1,12 @@
+USE [master]
+GO
+CREATE LOGIN [deneme1] WITH PASSWORD=N'1234' MUST_CHANGE, DEFAULT_DATABASE=[master], CHECK_EXPIRATION=ON, CHECK_POLICY=ON
+GO
+USE [AdventureWorks2022]
+GO
+CREATE USER [deneme1] FOR LOGIN [deneme1]
+GO
+USE [AdventureWorks2022]
+GO
+ALTER ROLE [db_securityadmin] ADD MEMBER [deneme1]
+GO
