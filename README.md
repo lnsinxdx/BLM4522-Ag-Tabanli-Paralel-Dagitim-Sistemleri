@@ -6,6 +6,8 @@ Bu repo, BLM4522 dersi kapsamında yapılan veritabanı projelerini içermektedi
 
 - **Proje 3**: Veritabanı Güvenliği ve Erişim Kontrolü
 - **Proje 7**: Veritabanı Yedekleme ve Otomasyon
+- **Proje 1**: Veritabanı Performans ve Optimizasyonu ve Izleme
+- **Proje 2**: Veritabanı Yedekleme ve Felaketten Kurtarma Planı
 
 ## Teknoloji
 
@@ -20,6 +22,4 @@ Her proje için ayrı klasör:
 - `screenshots/` — uygulama ekran görüntüleri
 - `report/` — proje raporu
 
-## Durum
 
-Bu çalışma devam etmektedir. Git geçmişi, projenin aşamalı gelişimini göstermektedir.
